@@ -1,8 +1,5 @@
-from models.citizen import Citizen
-from flask import render_template, request
+from models.models_citizen import Citizen
 
-def citizen_list():
-    if request.method == "POST":
-        Citizen.create(request.form)
-    citizens = Citizen.get_all()
-    return render_template("citizens.html", citizens=citizens)
+def list_citizens():
+    return Citizen.get_all()
+

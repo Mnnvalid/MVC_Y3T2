@@ -27,11 +27,11 @@ CREATE TABLE assignments (
             assignment_id INTEGER PRIMARY KEY AUTOINCREMENT,
             shelter_id INTEGER,
             citizen_id INTEGER,
-            assignment_date TEXT,
+            assignment_date TEXT
             )
 """)
 
-shelter = [
+shelters = [
     (10,"LOW"),(5,"HIGH"),(8,"LOW"),(4,"MEDIUM"),(6,"LOW")
 ]
 
